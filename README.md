@@ -13,7 +13,8 @@ Though I could never get them to work, I thought this solution would just be a b
 
 ## Explanation how to use:
 1) Go to the Google Form
-2) Type in the Base URL for your website (a heroku website)
+2) Type in the Base URL for your website (a heroku website). Has to be a **GET route!!**
+ex. https://fakewebsite.herokuapp.com/
 3) Give an hour in UTC time ex. 14, and my server will ping your server between 14 and 15 hours forward, it does wrap!
 
 So: 14 + 15 = 29 - 24 = 5, So 14:00 to 5:00 UTC. 
