@@ -31,6 +31,12 @@ Used this video to help me figure out how to pull from Google Sheet API, and att
 
 Didn't include the package-json / my keys.json obviously, lol, but you should easily be able to tell what to npm install just based off my require imports.
 
+The application is so simple:
+- Google Form goes to Google Sheet
+- My express server goes to google sheet and loops through the column of servers + column of times
+- Checks if the current UTC hour is the same as the UTC hours that got checked off
+- If so, ping the server
+
 ## Information on Sleep State
 https://blog.heroku.com/app_sleeping_on_heroku
 
