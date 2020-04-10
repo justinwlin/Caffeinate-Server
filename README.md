@@ -5,6 +5,12 @@ Keeping Heroku Free Tier Servers Running
 Heroku Free Tier servers fall asleep every 30 mins if someone doesn't visit your website. Making it insanely slow.
 Thus, created a nodejs server to help keep your servers awake. 
 
+There definitely are other options I've heard of: 
+- New Relic Add-On
+- Self-Pinging
+
+Though I could never get them to work, I thought this solution would just be a bit more straight forward of copy and paste your URL and you are done.
+
 ## Explanation how to use:
 1) Go to the Google Form
 2) Type in the Base URL for your website (a heroku website)
