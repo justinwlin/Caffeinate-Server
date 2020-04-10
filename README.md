@@ -1,2 +1,20 @@
 # Caffeinate-Server
-Keeping Heroku Servers Running
+Keeping Heroku Free Tier Servers Running
+
+## Explanation:
+Heroku Free Tier servers fall asleep every 30 mins if someone doesn't visit your website. Making it insanely slow.
+Thus, created a nodejs server to help keep your servers awake. 
+
+## Explanation how to use:
+1) Go to the Google Form
+2) Type in the Base URL for your website (a heroku website)
+3) Give an hour in UTC time ex. 14, and my server will ping your server between 14 and 15 hours forward, it does wrap!
+
+So: 14 + 15 = 29 - 24 = 5, So 14:00 to 5:00 UTC. 
+
+4) Heroku requires servers to sleep for at minimum 7 hours a day! Which gives you 17 hours of on-time. BUT, i am only doing 15 hours in order to give servers 2 hours of leeway in case someone does come on an off-time and to let the server has some time to wake up. 
+
+Here is the form below to type in the information: 
+My server basically goes to the Google Sheet, parses it for the servers, and pings the servers every 5 mins
+
+https://docs.google.com/forms/d/e/1FAIpQLSfEFuxpWgHSCAvsU4vxSSamS_i33hFPMWgcck0Z4gAw4ake7A/viewform
