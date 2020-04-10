@@ -75,16 +75,13 @@ const sendRequests = async (data) => {
         let currTime = parseInt(new Date().getUTCHours(), 0)
         let pingCondition = false
         startTimeFromSheet = startTimeFromSheet.split(",")
-        console.log(startTimeFromSheet)
-
-        if (currTime in startTimeFromSheet) {
-            pingCondition = true
-        } else {
-            pingCondition = false
+        for (i = 0; i < startTimeFromSheet.length; i++) {
+            startTimeFromSheet[i] = parseInt(startTimeFromSheet[i])
         }
-        console.log("PING CONDITION: " + pingCondition + "; FOR: " + website)
+        console.log(startTimeFromSheet)
+        pingCondition = startTimeFromSheet.includes(currTime) ? true : false
+        console.log("PING CONDITION: " + pingCondition + "; FOR: " + website + "; CURRENT UTC HOUR: " + currTime)
         if (website.includes("http") && pingCondition) {
-
             axios.get(website)
                 .then(console.log("Pinged: " + website))
                 .catch((error) => {
@@ -95,7 +92,7 @@ const sendRequests = async (data) => {
 }
 
 // ========================================
-// Interval Function to ping every X mins
+// Interval Function to ping every 5 mins
 // ========================================
 setInterval(function () {
     counterPings += 1
