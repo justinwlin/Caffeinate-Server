@@ -37,3 +37,7 @@ Didn't include the package-json / my keys.json obviously, lol, but you should ea
 
 ## Information on Sleep State
 https://blog.heroku.com/app_sleeping_on_heroku
+
+## Other Options:
+Just found this out! But could always use this service to run free Cron Jobs!
+https://cron-job.org/en/
