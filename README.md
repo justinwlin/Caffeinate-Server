@@ -24,3 +24,10 @@ Here is the form below to type in the information:
 My server basically goes to the Google Sheet, parses it for the servers, and pings the servers every 5 mins
 
 https://docs.google.com/forms/d/e/1FAIpQLSfEFuxpWgHSCAvsU4vxSSamS_i33hFPMWgcck0Z4gAw4ake7A/viewform
+
+## If you want to build your own:
+https://youtu.be/MiPpQzW_ya0
+
+Used this video to help me figure out how to pull from Google Sheet API, and attached the index.js code in my Node.js express server as reference. 
+
+Didn't include the package-json / my keys.json obviously, lol, but you should easily be able to tell what to npm install just based off my require imports.
