@@ -79,6 +79,8 @@ const sendRequests = async (data) => {
 
         if (currTime in startTimeFromSheet) {
             pingCondition = true
+        }else{
+            pingCondition = false
         }
         console.log("PING CONDITION: " + pingCondition + "; FOR: " + website)
         if (website.includes("http") && pingCondition) {
