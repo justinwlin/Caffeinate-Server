@@ -73,34 +73,14 @@ const sendRequests = async (data) => {
         let website = row[1]
         let startTimeFromSheet = row[2]
         let currTime = parseInt(new Date().getUTCHours(), 0)
+        let pingCondition = false
+        startTimeFromSheet = startTimeFromSheet.split(",")
+        console.log(startTimeFromSheet)
 
-        let pingCondition = false;
-        //If the the time won't ever wrap around
-        if (currTime >= startTimeFromSheet && currTime <= startTimeFromSheet + AMT_HOURS_TO_PING) {
+        if (currTime in startTimeFromSheet) {
             pingCondition = true
         }
-        //There is a chance that it will wrap around
-        else if (startTimeFromSheet + AMT_HOURS_TO_PING >= 24) {
-            if (currTime > startTimeFromSheet) {
-                pingCondition = true
-            } else {
-                //Calculate endtime
-                let endtime = startTimeFromSheet + AMT_HOURS_TO_PING
-                //ex. 12 + 15 = 27
-                //27 - 24 = 3 am
-                endtime -= 24
-                if (currTime <= endtime) {
-                    pingCondition = true
-                } else {
-                    pingCondition = false
-                }
-            }
-        } else {
-            pingCondition = false
-        }
-
-        console.log(pingCondition)
-
+        console.log("PING CONDITION: " + pingCondition + "; FOR: " + website)
         if (website.includes("http") && pingCondition) {
 
             axios.get(website)
