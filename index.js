@@ -79,7 +79,7 @@ const sendRequests = async (data) => {
 
         if (currTime in startTimeFromSheet) {
             pingCondition = true
-        }else{
+        } else {
             pingCondition = false
         }
         console.log("PING CONDITION: " + pingCondition + "; FOR: " + website)
@@ -102,7 +102,7 @@ setInterval(function () {
     console.log("PINGED: " + counterPings)
     getRows()
 
-}, 300000);
+}, 1200000);
 
 // ========================================
 // Grabs the Data from Google Sheet > 
