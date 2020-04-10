@@ -20,7 +20,7 @@ ex. https://fakewebsite.herokuapp.com/
 3) Check box however many you want for hours that you want the bot to ping your servers! CAREFUL THOUGH, free tiers NEED to sleep for 7 hours a day, so if you go beyond 17 boxes, it probably won't work!
 
 Here is the form below to type in the information: 
-My server basically goes to the Google Sheet, parses it for the servers, and pings the servers every 5 mins
+My server basically goes to the Google Sheet, parses it for the servers, and pings the servers every 20 mins
 
 https://docs.google.com/forms/d/e/1FAIpQLSfEFuxpWgHSCAvsU4vxSSamS_i33hFPMWgcck0Z4gAw4ake7A/viewform
 
