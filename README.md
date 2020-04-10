@@ -10,8 +10,11 @@ Thus, created a nodejs server to help keep your servers awake.
 There definitely are other options I've heard of: 
 - New Relic Add-On
 - Self-Pinging
+- Health Checker Monitor Sites
 
-Though I could never get them to work, I thought this solution would just be a bit more straight forward of copy and paste your URL and you are done.
+Though I could never get them to work, I thought this solution would just be a bit more straight forward of copy and paste your URL and you are done. Also, health checker monitor sites (which just ping your site every few minutes to make sure it is online) you can't select the time in which it monitors making it so it might burn up your 17 hours, and go dead in random hours without you knowing when it will be dead.
+
+
 
 ## Explanation how to use:
 1) Go to the Google Form
