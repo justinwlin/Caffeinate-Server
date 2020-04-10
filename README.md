@@ -32,3 +32,6 @@ https://youtu.be/MiPpQzW_ya0
 Used this video to help me figure out how to pull from Google Sheet API, and attached the index.js code in my Node.js express server as reference. 
 
 Didn't include the package-json / my keys.json obviously, lol, but you should easily be able to tell what to npm install just based off my require imports.
+
+## Information on Sleep State
+https://blog.heroku.com/app_sleeping_on_heroku
