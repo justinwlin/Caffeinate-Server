@@ -38,6 +38,6 @@ https://blog.heroku.com/app_sleeping_on_heroku
 Just found this out! But could always use this service to run free Cron Jobs!
 https://cron-job.org/en/
 
-## Reddit Post I made explaining the History, other options, and a bit of other tricks to keeping your server alive! :) 
+## Reddit Post I made explaining the History of another service I used to use, other options, and a bit of other tricks to keeping your server alive! :) 
 
 https://www.reddit.com/r/Heroku/comments/fyb60t/keeping_free_tier_heroku_servers_alive/
