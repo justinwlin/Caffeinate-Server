@@ -95,7 +95,7 @@ const sendRequests = async (data) => {
 }
 
 // ========================================
-// Interval Function to ping every 5 mins
+// Interval Function to ping every X mins
 // ========================================
 setInterval(function () {
     counterPings += 1
